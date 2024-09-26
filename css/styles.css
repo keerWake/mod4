@@ -2,7 +2,8 @@
 ------------------------------ */
 html{
     box-sizing: border-box;
-    font-size: 62.5;
+    font-size: 10;
+
 }
 
 *,*:before, *:after{
@@ -11,7 +12,7 @@ html{
 
 body{
     background:rgba(186, 222, 222);;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -32,6 +33,7 @@ h2{
     font-family: "Oswald", sans-serif;
     margin: 0;
 }
+
 a{
     color:#4A3267;
 }
@@ -53,7 +55,7 @@ a:hover{
     color: #F3D9E5;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1rem;
     display: inline-block;
     padding: 7px;
     letter-spacing: 0.1em;
@@ -65,7 +67,7 @@ a:hover{
     position: fixed;
     top: 5px;
     left: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .resume-section{
@@ -84,12 +86,77 @@ a:hover{
 
 .resume header::before{
     padding: 0;
-    margin: 0;
     background: url(../images/annie-spratt-unsplash.jpg) center / cover;
     background-size: cover;
     content: "";
     display: block;
     height: 375px;
+}
+
+/* Navbar
+------------------------------ */
+
+#navbar{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    color: white;
+    right: 20px;
+}
+
+#nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+
+}
+
+#nav li{
+    margin: 0;
+    list-style-type: none;
+    float: right;
+    width: auto;
+    text-align: center;
+    background-color: #4A3267;
+    position: relative;
+    border-radius: 7px;
+}
+
+#nav a{
+    display: block;
+    width: 130px;
+    text-align: center;
+    color: white;
+
+}
+
+#nav li ul{
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    
+}
+
+#nav li:hover ul{
+    left:auto;
+    
+}
+
+#nav li ul li:hover{
+    background-color:#F3D9E5;
+    color: #4A3267;
+    
+}
+
+#nav li ul li a:hover{
+    color: #4A3267;
 }
 
 
