@@ -6,6 +6,10 @@ html{
 
 }
 
+html, body{
+    height: 100%;
+}
+
 *,*:before, *:after{
     box-sizing: inherit;
 }
@@ -48,8 +52,16 @@ a:hover{
     margin: 0 auto;
     max-width: 900px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
 }
 
+@media screen and (max-width:650px) {
+    .content-wrapper{
+        padding: 10px;
+    }
+}
 .btn{
     background: #4A3267;
     color: #F3D9E5;
@@ -70,6 +82,24 @@ a:hover{
     font-size: 1rem;
 }
 
+@media screen and (max-width:1200px) {
+    .download-link{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:500px){
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+
+}
 .resume-section{
     margin-bottom: 50px;
 }
@@ -104,6 +134,12 @@ a:hover{
     color: white;
     right: 20px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width:1200px) {
+    #navbar{
+        position: absolute;
+    }
 }
 
 #nav{
@@ -160,18 +196,72 @@ a:hover{
 }
 
 
+
 /* Projects
 ------------------------------ */
 
 .project-item{
-    display: flow-root;
     margin:30px 0;
 }
 .project-item img{
     width: 300px;
-    float: left;
-    margin-right: 20px;
 
+}
+
+@media screen and (min-width:860px){
+    .project-item{
+        display: flow-root;
+    }
+
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:859px){
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .project-item img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Work Experience
+------------------------------ */
+.work-item{
+    margin:30px 0 ;
+
+}
+
+.work-details p, h3{
+    margin: 0;
+}
+
+
+
+@media screen and (min-width 860px){
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1ft;
+        column-gap: 20px;
+    }
+
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
 }
 
 /* Footer
@@ -179,7 +269,6 @@ a:hover{
 footer{
     background: rgba(150, 230, 220, 0.7);
     padding: 1%;
-
 }
 
 .socials{
@@ -189,9 +278,29 @@ footer{
 
 .socials li{
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img{
     width: 40px;
+}
+
+.socials img:hover{
+    opacity: 0.5;
+}
+
+@media screen and (min-width:860px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:859px){
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
 }
 

@@ -70,10 +70,13 @@
       <p>View a few of my selected projects below!</p>
 
       <!-- Copy the whole <section> block to add more projects. -->
-      <section class="project-item">
-        <h3>My Personal Avatar</h3>
-        <img src="images/avatar.png" alt="Avatar">
+        <div class="project-wrapper">
 
+       
+      <section class="project-item">
+        
+        <img src="images/avatar.png" alt="Avatar">
+        <h3>My Personal Avatar</h3>
         <p>I used P5 JS. to create my personal avatar. To make it more interactive, I have also programmed it to be able
           to blink when you click.</p>
         <a href="https://interactive-avatar-keerthana-k-keer8k.replit.app/" target="_blank" class="btn">View project /
@@ -81,13 +84,15 @@
       </section>
 
       <section class="project-item">
-        <h3>Collection Game To Promote Healthy Eating</h3>
         <img src="images/collectingGame.png" alt="Desk with Stationary">
+        <h3>Collection Game To Promote Healthy Eating</h3>
 
         <p>I used P5 JS. to program a Collection game where the player must collect healthy items to gain points.</p>
         <a href="https://eat-healthy-game-keerthana-keer8k.replit.app/" target="_blank" class="btn">View project / case
           study</a>
       </section>
+
+    </div>
       <!-- End of Project block. -->
     </section>
 
@@ -95,18 +100,24 @@
     <section class="resume-section">
       <h2>Work Experience</h2>
       <!-- Copy this whole <section> block to add more jobs. -->
-      <section>
-        <h3>Taekwondo Instructor</h3>
-        <p>Taekwondo Dojo</p>
-        <p>June 2020</p>
+      <section class="work-item">
+        <div class="work-details">
+          <h3>Taekwondo Instructor</h3>
+          <p>Taekwondo Dojo</p>
+          <p>June 2020 - Present</p>
+        </div>
+        
 
-          <p>Assist head instructor in managing and teaching students of various ages and levels in Taekwondo. Engage in
+        <div class="work-summary">
+          <p id="work-summary-p1">Assist head instructor in managing and teaching students of various ages and levels in Taekwondo. Engage in
             Instructor meetings and help run testings for 80+ kids.</p>
           <p>Events I have helped with:</p>
           <ul>
             <li>Assisted at National Tournaments</li>
             <li>Assisted at Regional Tournaments</li>
           </ul>
+        </div>
+          
         
       </section>
       <!-- End of Job block. -->
@@ -120,7 +131,7 @@
       <section>
         <h3>High School</h3>
         <p>Graduation Date: Spring 2026</p>
-        <p>I am in many clubs at my school.</p>
+        <p>I am an active member in many clubs at my school including National Honor Society (NHS) and Future Business Leaders of America (FBLA).</p>
       </section>
 
       <section>
@@ -134,7 +145,10 @@
   </main>
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer id="contactMe">
-      <h3>Let's Keep in Touch!</h3>
+      <div>
+        <p>Let's keep in touch!</p>
+      </div>
+      
 
       <!-- Social media and contact links. Add or remove any networks. -->
       <ul class="socials">
